@@ -1,0 +1,55 @@
+.slider__line{
+display: flex;
+position: relative;
+left: 0;
+transition: all ease 1s;
+min-width: 1460px;
+
+
+
+}
+.slider__img{
+    width: 365px;
+    height: 500px;
+}
+.slider{
+    max-width: 365px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.button__left, .button__right{
+  width: 110px;  
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(255, 255, 3);
+  font-size: 19px;
+}
+.button__left:hover, .button__right:hover{
+    border: 2px solid rgb(252, 252, 5);
+    color: aliceblue;
+    animation: grow 2s infinite; 
+}
+.button__left{
+    margin-right: 8px;
+}
+.buttons{
+    padding-top: 40px;
+    max-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+@keyframes grow{
+    0%{
+        transform: scale3d(1,1,1);   
+         }
+         50%{
+         transform:scale3d(1.08,1.08,1.08) ;  
+         } 
+         100%{
+           transform: scale3d(1,1,1);
+         }  
+}
+
